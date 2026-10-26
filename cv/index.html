@@ -9,38 +9,36 @@
   <meta property="og:title" content="Tom Emmerson — CV">
   <meta property="og:description" content="Product Owner, Business Analyst and COO with 10+ years delivering SaaS, web and mobile products for UK and European businesses.">
   <meta property="og:type" content="profile">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="/styles.css?v=20261026">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body class="cv-page">
   <header class="site-header">
     <div class="container header-inner">
-      <a href="/cv/" class="logo" aria-label="Tom Emmerson CV">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
-        <span>Tom Emmerson</span>
+      <a href="/cv/" class="site-avatar" aria-label="Tom Emmerson, home">
+        <img src="/images/profile.jpg" alt="" width="40" height="40">
       </a>
-      <nav class="desktop-nav" aria-label="Main navigation">
+      <nav class="primary-nav" aria-label="Site">
+        <a href="/cv/" aria-current="page">Career</a>
+        <a href="/music/">Music</a>
+      </nav>
+    </div>
+    <nav class="sub-nav" aria-label="On this page">
+      <div class="container sub-nav-inner">
+        <a href="#top">Overview</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
+        <a href="#wordsearch">Wordsearch</a>
         <a href="#contact">Contact</a>
-        <a href="/music/">Music</a>
-        <button type="button" class="btn btn-primary js-print">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
-          Save as PDF
-        </button>
-      </nav>
-      <nav class="mobile-nav" aria-label="Mobile navigation">
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact" class="btn btn-primary">Contact</a>
-      </nav>
-    </div>
+        <button type="button" class="btn btn-primary js-print">Save as PDF</button>
+      </div>
+    </nav>
   </header>
 
   <main>
     <!-- Intro -->
-    <section class="hero">
+    <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-content">
           <p class="eyebrow">Curriculum Vitae</p>
@@ -55,7 +53,6 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
             </a>
             <a href="https://www.linkedin.com/in/tomemmersonba/" class="btn btn-secondary" target="_blank" rel="noopener">View LinkedIn</a>
-            <button type="button" class="btn btn-secondary js-print cv-hide-desktop">Save as PDF</button>
           </div>
         </div>
 
@@ -108,6 +105,32 @@
       </div>
     </section>
 
+    <!-- Wordsearch -->
+    <section id="wordsearch" class="about cv-section cv-ws-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Find my career</h2>
+          <p>Five names from my career are hidden in the grid. Drag across a word, or tap its letters one at a time, to find out more.</p>
+        </div>
+
+        <div class="cv-ws">
+          <div class="cv-ws-bar">
+            <ul class="cv-ws-words" aria-label="Words to find"></ul>
+            <div class="cv-ws-actions">
+              <p class="cv-ws-progress" aria-live="polite"></p>
+              <button type="button" class="btn btn-secondary cv-ws-clear">Clear selection</button>
+              <button type="button" class="btn btn-secondary cv-ws-new">New puzzle</button>
+            </div>
+          </div>
+
+          <div class="cv-ws-grid" role="grid" aria-label="Wordsearch, 10 by 10 letters. Use the arrow keys to move and Space or Enter to select a letter."></div>
+          <p class="cv-ws-hint">Words run left to right, top to bottom, or diagonally.</p>
+
+          <div class="cv-ws-panel" aria-live="polite" hidden></div>
+        </div>
+      </div>
+    </section>
+
     <!-- Experience -->
     <section id="experience" class="about cv-section">
       <div class="container">
@@ -117,7 +140,7 @@
         </div>
 
         <ol class="cv-timeline">
-          <li class="cv-job">
+          <li class="cv-job" id="job-pzaz">
             <div class="cv-job-head">
               <div>
                 <h3>Chief Operating Officer</h3>
@@ -135,7 +158,7 @@
             </ul>
           </li>
 
-          <li class="cv-job">
+          <li class="cv-job" id="job-subbd">
             <div class="cv-job-head">
               <div>
                 <h3>Product Manager</h3>
@@ -205,7 +228,7 @@
             </ul>
           </li>
 
-          <li class="cv-job">
+          <li class="cv-job" id="job-gmc">
             <div class="cv-job-head">
               <div>
                 <h3>Senior Business Analyst</h3>
@@ -237,7 +260,7 @@
             </ul>
           </li>
 
-          <li class="cv-job">
+          <li class="cv-job" id="job-coop">
             <div class="cv-job-head">
               <div>
                 <h3>Business Analyst</h3>
@@ -253,7 +276,7 @@
             </ul>
           </li>
 
-          <li class="cv-job">
+          <li class="cv-job" id="job-bupa">
             <div class="cv-job-head">
               <div>
                 <h3>Junior Business Analyst</h3>
@@ -463,6 +486,316 @@
     document.querySelectorAll('.js-print').forEach(function (b) {
       b.addEventListener('click', function () { window.print(); });
     });
+
+    /* ---------- Wordsearch ---------- */
+    (function () {
+      var root = document.querySelector('.cv-ws');
+      if (!root) return;
+
+      var SIZE = 10;
+      var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      // Forward directions only: right, down, diagonal down-right, diagonal up-right
+      var DIRS = [[0, 1], [1, 0], [1, 1], [-1, 1]];
+      var ALL_DIRS = [[0, 1], [1, 0], [1, 1], [-1, 1], [0, -1], [-1, 0], [-1, -1], [1, -1]];
+
+      var WORDS = {
+        PZAZ: {
+          title: 'Chief Operating Officer',
+          org: 'Pzaz',
+          dates: 'Apr 2025 – Present',
+          text: 'Driving growth at a SaaS start-up building AI-enhanced storyboarding and production software for filmmakers, producers and creative professionals.',
+          points: ['Leads the Sales & Marketing team, working closely with the CEO', 'Owns the go-to-market strategy, sales pipeline and partnerships', 'Represents the company to customers, partners and investors'],
+          anchor: '#job-pzaz'
+        },
+        SUBBD: {
+          title: 'Product Manager',
+          org: 'SUBBD',
+          dates: 'Aug 2024 – Apr 2025',
+          text: 'Set and delivered the product vision and roadmap for an AI-powered creator platform offering personal assistants, AI-generated content and monetisation tools.',
+          points: ['Product strategy aligned with business goals', 'Market research into trends and customer pain points', 'KPIs and data-led decision making across engineering, design and marketing'],
+          anchor: '#job-subbd'
+        },
+        GMC: {
+          title: 'Senior Business Analyst',
+          org: 'General Medical Council',
+          dates: 'Mar 2018 – Dec 2018',
+          text: 'Business analysis for the UK regulator of doctors, which upholds standards of competence, ethics and professionalism in medicine.',
+          points: ['Requirements analysis and documentation for 15 projects', '10+ user interface designs and 5+ technical specifications', '20+ requirements workshops with stakeholder groups'],
+          anchor: '#job-gmc'
+        },
+        COOP: {
+          title: 'Business Analyst',
+          org: 'The Co-operative Group',
+          dates: 'Oct 2012 – Feb 2015',
+          text: 'Part of the Group’s digital strategy, improving its websites and apps for customers.',
+          points: ['Led the first mobile web app, lifting online engagement by 50%', 'Native iOS and Android apps with 10,000+ downloads in 6 months', 'Prototyped the uScan uShop app, cutting checkout time by 30%'],
+          anchor: '#job-coop'
+        },
+        BUPA: {
+          title: 'Junior Business Analyst & Service Team Manager',
+          org: 'Bupa',
+          dates: 'May 2007 – Nov 2012',
+          text: 'Five and a half years at Bupa, starting by leading a customer service team and moving into business analysis.',
+          points: ['Managed a team of 10–13 advisors, achieving 95%+ of KPIs', 'Trained 200+ staff on a revised call quality model', 'Built a single customer view across 10+ source systems'],
+          anchor: '#job-bupa'
+        }
+      };
+      var ORDER = ['PZAZ', 'SUBBD', 'GMC', 'COOP', 'BUPA'];
+
+      var gridEl = root.querySelector('.cv-ws-grid');
+      var wordsEl = root.querySelector('.cv-ws-words');
+      var progressEl = root.querySelector('.cv-ws-progress');
+      var panelEl = root.querySelector('.cv-ws-panel');
+
+      var grid, placed, found, selected, cells, focusIndex = 0;
+
+      function rand(n) { return Math.floor(Math.random() * n); }
+      function key(r, c) { return r * SIZE + c; }
+
+      function countOccurrences(g, word) {
+        var n = 0;
+        for (var r = 0; r < SIZE; r++) for (var c = 0; c < SIZE; c++) {
+          for (var d = 0; d < ALL_DIRS.length; d++) {
+            var ok = true;
+            for (var i = 0; i < word.length; i++) {
+              var rr = r + ALL_DIRS[d][0] * i, cc = c + ALL_DIRS[d][1] * i;
+              if (rr < 0 || rr >= SIZE || cc < 0 || cc >= SIZE || g[rr][cc] !== word[i]) { ok = false; break; }
+            }
+            if (ok) n++;
+          }
+        }
+        return n;
+      }
+
+      function build() {
+        for (var attempt = 0; attempt < 500; attempt++) {
+          var g = [], p = {}, failed = false;
+          for (var r = 0; r < SIZE; r++) { g.push([]); for (var c = 0; c < SIZE; c++) g[r].push(null); }
+          // Place longest words first
+          var list = ORDER.slice().sort(function (a, b) { return b.length - a.length; });
+          for (var w = 0; w < list.length && !failed; w++) {
+            var word = list[w], done = false;
+            for (var t = 0; t < 200 && !done; t++) {
+              var dir = DIRS[rand(DIRS.length)];
+              var r0 = rand(SIZE), c0 = rand(SIZE), path = [], fits = true;
+              for (var i = 0; i < word.length; i++) {
+                var rr = r0 + dir[0] * i, cc = c0 + dir[1] * i;
+                if (rr < 0 || rr >= SIZE || cc < 0 || cc >= SIZE) { fits = false; break; }
+                if (g[rr][cc] !== null && g[rr][cc] !== word[i]) { fits = false; break; }
+                path.push(key(rr, cc));
+              }
+              if (!fits) continue;
+              for (var j = 0; j < word.length; j++) g[Math.floor(path[j] / SIZE)][path[j] % SIZE] = word[j];
+              p[word] = path;
+              done = true;
+            }
+            if (!done) failed = true;
+          }
+          if (failed) continue;
+          for (var r2 = 0; r2 < SIZE; r2++) for (var c2 = 0; c2 < SIZE; c2++) {
+            if (g[r2][c2] === null) g[r2][c2] = LETTERS[rand(26)];
+          }
+          // Every word must appear exactly once, in any direction, so a find is never ambiguous
+          var unique = ORDER.every(function (wd) { return countOccurrences(g, wd) === 1; });
+          if (unique) { grid = g; placed = p; return; }
+        }
+      }
+
+      function render() {
+        gridEl.innerHTML = '';
+        cells = [];
+        for (var r = 0; r < SIZE; r++) {
+          var row = document.createElement('div');
+          row.setAttribute('role', 'row');
+          row.className = 'cv-ws-row';
+          for (var c = 0; c < SIZE; c++) {
+            var cell = document.createElement('div');
+            cell.setAttribute('role', 'gridcell');
+            cell.className = 'cv-ws-cell';
+            cell.textContent = grid[r][c];
+            cell.dataset.index = key(r, c);
+            cell.tabIndex = key(r, c) === focusIndex ? 0 : -1;
+            cell.setAttribute('aria-selected', 'false');
+            cell.setAttribute('aria-label', grid[r][c] + ', row ' + (r + 1) + ', column ' + (c + 1));
+            row.appendChild(cell);
+            cells.push(cell);
+          }
+          gridEl.appendChild(row);
+        }
+        wordsEl.innerHTML = '';
+        ORDER.forEach(function (w) {
+          var li = document.createElement('li');
+          var b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'cv-ws-word';
+          b.dataset.word = w;
+          b.textContent = w;
+          b.disabled = true;
+          b.addEventListener('click', function () { showPanel(w); });
+          li.appendChild(b);
+          wordsEl.appendChild(li);
+        });
+        paint();
+      }
+
+      function paint() {
+        var foundBy = {};
+        found.forEach(function (w) { placed[w].forEach(function (k) { if (foundBy[k] === undefined) foundBy[k] = w; }); });
+        cells.forEach(function (cell, k) {
+          var isSel = selected.indexOf(k) !== -1;
+          cell.classList.toggle('is-selected', isSel);
+          cell.setAttribute('aria-selected', isSel ? 'true' : 'false');
+          cell.classList.toggle('is-found', foundBy[k] !== undefined);
+          cell.dataset.word = foundBy[k] || '';
+        });
+        wordsEl.querySelectorAll('.cv-ws-word').forEach(function (b) {
+          var isFound = found.indexOf(b.dataset.word) !== -1;
+          b.classList.toggle('is-found', isFound);
+          b.disabled = !isFound;
+          b.setAttribute('aria-label', b.dataset.word + (isFound ? ', found. Show details' : ', not found yet'));
+        });
+        progressEl.textContent = found.length === ORDER.length
+          ? 'All 5 found. Nice work!'
+          : found.length + ' of ' + ORDER.length + ' found';
+      }
+
+      function sameSet(a, b) {
+        if (a.length !== b.length) return false;
+        for (var i = 0; i < a.length; i++) if (b.indexOf(a[i]) === -1) return false;
+        return true;
+      }
+
+      // Returns true if the selection completed a word
+      function check() {
+        for (var i = 0; i < ORDER.length; i++) {
+          var w = ORDER[i];
+          if (found.indexOf(w) === -1 && sameSet(selected, placed[w])) {
+            found.push(w);
+            selected = [];
+            paint();
+            showPanel(w, true);
+            return true;
+          }
+        }
+        return false;
+      }
+
+      function showPanel(w, isNew) {
+        var d = WORDS[w];
+        var pts = d.points.map(function (t) { return '<li><span></span>' + t + '</li>'; }).join('');
+        panelEl.innerHTML =
+          '<p class="eyebrow">' + (isNew ? 'You found ' : '') + w + '</p>' +
+          '<div class="cv-job-head"><div><h3>' + d.title + '</h3><p class="cv-org">' + d.org + '</p></div>' +
+          '<p class="cv-dates">' + d.dates + '</p></div>' +
+          '<p class="cv-summary">' + d.text + '</p>' +
+          '<ul class="cv-points">' + pts + '</ul>' +
+          '<a class="cv-link cv-ws-more" href="' + d.anchor + '">See it in my experience</a>';
+        panelEl.dataset.word = w;
+        panelEl.hidden = false;
+        panelEl.classList.remove('is-in');
+        void panelEl.offsetWidth; // restart the entrance animation
+        panelEl.classList.add('is-in');
+      }
+
+      function shake() {
+        gridEl.classList.remove('is-miss');
+        void gridEl.offsetWidth;
+        gridEl.classList.add('is-miss');
+      }
+
+      function toggle(k) {
+        var i = selected.indexOf(k);
+        if (i === -1) selected.push(k); else selected.splice(i, 1);
+        if (!check()) paint();
+      }
+
+      // Straight line from start to end, snapped to the nearest of the 8 directions
+      function line(a, b) {
+        var r0 = Math.floor(a / SIZE), c0 = a % SIZE, r1 = Math.floor(b / SIZE), c1 = b % SIZE;
+        var dr = r1 - r0, dc = c1 - c0;
+        var adr = Math.abs(dr), adc = Math.abs(dc);
+        if (adr && adc && adr !== adc) {
+          if (adr > 2 * adc) dc = 0; else if (adc > 2 * adr) dr = 0;
+          else { var m = Math.max(adr, adc); dr = Math.sign(dr) * m; dc = Math.sign(dc) * m; }
+        }
+        var steps = Math.max(Math.abs(dr), Math.abs(dc)), sr = Math.sign(dr), sc = Math.sign(dc), out = [];
+        for (var i = 0; i <= steps; i++) {
+          var rr = r0 + sr * i, cc = c0 + sc * i;
+          if (rr < 0 || rr >= SIZE || cc < 0 || cc >= SIZE) break;
+          out.push(key(rr, cc));
+        }
+        return out;
+      }
+
+      // Pointer: drag to select a line, or tap to toggle single letters
+      var drag = null;
+      function cellFromPoint(x, y) {
+        var el = document.elementFromPoint(x, y);
+        return el && el.classList && el.classList.contains('cv-ws-cell') ? +el.dataset.index : null;
+      }
+      gridEl.addEventListener('pointerdown', function (e) {
+        var k = cellFromPoint(e.clientX, e.clientY);
+        if (k === null) return;
+        e.preventDefault();
+        drag = { start: k, moved: false, before: selected.slice() };
+        setFocus(k, false);
+        try { gridEl.setPointerCapture(e.pointerId); } catch (err) {}
+      });
+      gridEl.addEventListener('pointermove', function (e) {
+        if (!drag) return;
+        var k = cellFromPoint(e.clientX, e.clientY);
+        if (k === null || (k === drag.start && !drag.moved)) return;
+        drag.moved = true;
+        selected = line(drag.start, k);
+        paint();
+      });
+      function endDrag() {
+        if (!drag) return;
+        var d = drag; drag = null;
+        if (!d.moved) { selected = d.before; toggle(d.start); return; }
+        if (!check()) { shake(); selected = []; paint(); }
+      }
+      gridEl.addEventListener('pointerup', endDrag);
+      gridEl.addEventListener('pointercancel', function () { if (drag) { selected = drag.before; drag = null; paint(); } });
+
+      // Keyboard: arrow keys move, Space/Enter selects, Escape clears
+      function setFocus(k, move) {
+        cells[focusIndex].tabIndex = -1;
+        focusIndex = k;
+        cells[k].tabIndex = 0;
+        if (move !== false) cells[k].focus();
+      }
+      gridEl.addEventListener('keydown', function (e) {
+        var r = Math.floor(focusIndex / SIZE), c = focusIndex % SIZE;
+        switch (e.key) {
+          case 'ArrowRight': c = Math.min(SIZE - 1, c + 1); break;
+          case 'ArrowLeft': c = Math.max(0, c - 1); break;
+          case 'ArrowDown': r = Math.min(SIZE - 1, r + 1); break;
+          case 'ArrowUp': r = Math.max(0, r - 1); break;
+          case 'Home': c = 0; break;
+          case 'End': c = SIZE - 1; break;
+          case ' ': case 'Enter': e.preventDefault(); toggle(focusIndex); return;
+          case 'Escape': selected = []; paint(); return;
+          default: return;
+        }
+        e.preventDefault();
+        setFocus(key(r, c));
+      });
+
+      root.querySelector('.cv-ws-clear').addEventListener('click', function () { selected = []; paint(); });
+      root.querySelector('.cv-ws-new').addEventListener('click', start);
+
+      function start() {
+        found = []; selected = []; focusIndex = 0;
+        panelEl.hidden = true; panelEl.innerHTML = '';
+        build(); render();
+      }
+
+      // Exposed for automated testing only
+      window.__cvWordsearch = function () { return { grid: grid, placed: placed, found: found.slice() }; };
+
+      start();
+    })();
   </script>
 </body>
 </html>
