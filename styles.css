@@ -216,6 +216,32 @@ ul {
   max-width: 40rem;
 }
 
+.hero-intro {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hero-portrait {
+  flex-shrink: 0;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 640px) {
+  .hero-intro {
+    gap: 1.75rem;
+  }
+  .hero-portrait {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
 .eyebrow {
   font-size: 0.875rem;
   font-weight: 600;
@@ -1136,6 +1162,12 @@ button.btn-secondary {
   .hero h1 {
     font-size: 24pt;
     margin-top: 0.25rem;
+  }
+  .hero-portrait {
+    width: 22mm;
+    height: 22mm;
+    box-shadow: none;
+    border-width: 0;
   }
   .lead {
     margin-top: 0.75rem;
